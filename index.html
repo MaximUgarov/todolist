@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="btn">
+            <input type="checkbox" onclick="checkFluency()" id="btn__openAdd" name="btn__openAdd" />
+            <label for="btn__openAdd"><span></span></label>
+        </div>
+        <h1 class="title">Задачи на сегодня</h1>
+        <div class="addTask-block" id="addTask-block">
+           <div class="wrap">
+            <input type="text" class="addTask-block__btn" id="addTask-block__btn" placeholder='Введите задачу'>
+            <div class="addTask-block-btn">
+                <input class="addTask-block-btn__add" type="checkbox" id="addTask-block-btn__add" name="addTask-block-btn__add" />
+                <label class="addTask-block-btn-warp" for="c11"><span class="addTask-block-btn-warp__btnStyle">+</span></label>
+
+
+            </div>
+            </div>
+            <div class="addTask-block-sort"><span class="sort-view"><img class="svg1" src="img/sort.svg">Сортировать по:<span class="setting">алфавиту</span></span>
+                <div class="sort"><input class="addTask-block-sort__btn" type="checkbox" id="addTask-block-sort__btn" name="addTask-block-sort__btn" />
+                    <label class="addTask-block-sortWarp__btn" for="addTask-block-sortWarp__btn"><span class="addTask-block-sortStyle__btn"></span></label>
+                </div>
+            </div>
+            <div class="filter-block"><span class="filtr-Block-span"><img class="svg" src="img/filter.svg">Сортировать по: <span class="setting">выполненым</span></span>
+                <div class="filter-block-btn"><input class="filter-block-btn__btn" type="checkbox" id="filter-block-btn__btn" name="filter-block-btn__btn" />
+                    <label class="filter-block-btn__btnWarp" for="filter-block-btn__btnWarp"><span class="filter-block-btn__btnStyle"></span></label>
+                </div>
+                <div class="settings-block">
+                <img class="deleteSvg" src="img/delete.svg"><span class="delete">Удалить выполненые</span><button class="deleteAll"></button>
+            </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="task-block" id="task-block">
+                <span class="task-block__text">Написать логику на js</span>
+                <div class="task-block-btnClose">
+                    <button class="close">Х</button>
+                </div>
+                <div class="task-block-btn">
+                    <input class="task-block-btn__btn" type="checkbox" id="task-block-btn__btn" name="task-block-btn__btn" />
+                    <label class="task-block-btn__btnWarp" for="task-block-btn__btnWarp"><span class="task-block-btn__btnStyle"></span></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
